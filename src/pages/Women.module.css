@@ -1,0 +1,61 @@
+.container{
+   width:100%;
+   margin-top: 200px;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+} 
+.box{
+    border-bottom:1px solid gainsboro;
+    margin:auto;
+    width:80%;
+    height:550px;
+}
+.box2{
+    border-bottom:1px solid gainsboro;
+    margin:auto;
+    margin-top: 100px;
+    width:80%;
+    height: 450px;
+}
+.box3{
+    border-bottom:1px solid gainsboro;
+    margin:auto;
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: repeat(6,15%);
+    grid-template-rows: repeat(2,50%);
+    justify-content: space-around;
+    width:80%;
+    height: 450px;
+}
+.box4{
+    border-bottom:1px solid gainsboro;
+    margin:auto;
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: repeat(6,15%);
+    justify-content: space-around;
+    width:80%;
+    height: 350px;
+}
+.box5{
+    border-bottom:1px solid gainsboro;
+    margin:auto;
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: repeat(3,30%);
+    justify-content: space-around;
+    width:80%;
+    height: 450px;
+}
+.box6{
+    border-bottom:1px solid gainsboro;
+    margin:auto;
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: repeat(3,30%);
+    justify-content: space-around;
+    width:80%;
+    height: 450px;
+}

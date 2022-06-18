@@ -1,0 +1,88 @@
+.FooterContainer{
+    height:1300px;
+    width: 100%;
+    border-top: 1px solid gainsboro;
+}
+.bigbox{
+    width:80%;
+    height: 100%;
+    margin: auto;
+}
+.box1{
+    border-bottom:0.5px solid gainsboro;
+    margin-top: 40px;
+    height: 20%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding:20px 0 0 0;
+}
+.input{
+    border: none;
+}
+.input:focus{
+    outline-style: none;
+}
+
+.apps{
+    width:80%;
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    grid-gap: 10px;
+}
+.apps div{
+    height:70px;
+    width:170px;
+    margin-top: 20px;
+}
+.apps div>img{
+    width: 100%;
+    height: 100%;
+}
+.bottom_des{
+    height: fit-content;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5,19%);
+    margin-top: 0px;
+    margin-bottom: 20px;
+    /* padding-left: 30px; */
+    padding:10px;
+    grid-gap: 10px;
+}
+
+.bottom_des div{
+    height: fit-content;
+    margin-left: 20px;
+    font-weight:200;
+}
+
+.bottom_des div ul>li{
+    list-style: none;
+    text-align: left;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.box3{
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 100px;
+}
+.box3>div{
+    display: flex;
+    margin-top: 10px;
+}
+.box2_logo{
+   width: 100%;
+   height: 100px;
+   padding: 10px;
+}
+.box2_logo img{
+    width:100%;
+    height: 100%;
+}
