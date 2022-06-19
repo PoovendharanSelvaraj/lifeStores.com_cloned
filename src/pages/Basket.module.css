@@ -1,15 +1,8 @@
 .container{
-    border:1px solid red;
     overflow: scroll;
     height: fit-content;
     width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2,50%);
-}
-.box1{
-    border:1px solid red;
-}
-.box2{
-    border:1px solid red;
 }

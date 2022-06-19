@@ -22,7 +22,7 @@ export const CartProvider= ({children})=>{
         }
     }
     return(
-    <CartContext.Provider value={{id,productId,count,incre,decre,collect,collection}} >
+    <CartContext.Provider value={{id,productId,count,setCount,incre,decre,collect,collection}} >
         {children}
     </CartContext.Provider>
     )

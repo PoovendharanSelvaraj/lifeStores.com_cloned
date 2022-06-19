@@ -7,11 +7,13 @@ import {useNavigate} from "react-router-dom";
 
 const BasketPage = () => {
     const navigate = useNavigate();
+    const {setCount} = useContext(CartContext)
   const {id} = useContext(CartContext);
   const [added,setAdded]=useState({});
   console.log(added);
   const handleCheckout=()=>{
     navigate('/checkout');
+    setCount(0)
   }
   useEffect(()=>{
     fetch(`https://lifestyle-back.herokuapp.com/products/${id}`).then(r=>r.json()).then((d)=>{setAdded(d); })
