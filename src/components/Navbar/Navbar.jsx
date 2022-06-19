@@ -6,13 +6,14 @@ import {BsShopWindow} from "react-icons/bs";
 import {Tooltip} from "@chakra-ui/react";
 import Signup from './Signup';
 import Basket from './Basket';
-import MenCato from './categories/MenCato';
 import { CategoriesContext } from '../../Context/CategoriesContext';
 import {useNavigate} from 'react-router-dom';
-import WomenCato from './categories/WomenCato';
+import { CartContext } from '../../Context/CartContext';
+
 
 const Navbar = () => {
   const {cato,MensCato,WomensCato}=useContext(CategoriesContext);
+  const {count}=useContext(CartContext);
   const navigate=useNavigate()
   const handleMensCate=()=>{
     MensCato();
@@ -70,14 +71,14 @@ const Navbar = () => {
               <div style={{display:"flex"}}>
                 <Signup/>
                 <Basket/>
+                <div  className={count>0 ? styles.basketBadge: null} >{count>0?count:null}</div>
               </div>
              </div>
           </div>  
         </div>
-        <div className={styles.box3}>
-          {cato.women?<WomenCato/>:<MenCato/>}
+      
         </div>
-    </div>
+    
   )
 }
 

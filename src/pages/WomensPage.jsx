@@ -10,7 +10,7 @@ const WomensPage = () => {
 
     useEffect(()=>{
        fetch("http://localhost:3004/roundImg").then((r)=>r.json()).then((d)=>{setimages(d)});
-       fetch("http://localhost:3004/trending").then((r)=>r.json()).then((d)=>{setTrending(d)})
+       fetch("http://localhost:3004/trending").then((r)=>r.json()).then((d)=>{setTrending(d)});
     },[])
   return (
     <div className={styles.container}>

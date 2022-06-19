@@ -100,6 +100,40 @@
     border-bottom:1px solid gainsboro;
     height:fit-content;
     background-color: #fff;
+    position: relative;
+}
+.womens_Cato1{
+    display: flex;
+    width:90%;
+    height: fit-content;
+
+    margin-left: 8.5%;
+}
+.womens_Cato1>div{
+    margin-right: 20px;
+    padding:5px 0 0 0 ;
+    font-weight: 600;
+    position: relative;
+}
+.womens_Cato1>div:hover{
+    color: rgb(251,183,98);
+    border-bottom: 1px solid rgb(251,183,98);
+}
+.productsBar{
+    position: absolute;
+    display: none;
+    margin:auto; 
+    width:90%;
+    height: 200px;
+    z-index: 9;
+    border: 1px solid red;
+}
+
+.womens_Cato1>div:hover .productsBar{
+    display:block;
+    border: 1px solid blue;
+    width:200px;
+    height: 400px;
 }
 
 
@@ -157,5 +191,15 @@
 
 .Modal{
     border-radius: -5px;
+}
+
+
+.basketBadge{
+    margin-left:-15px;
+    color:white;
+    width:20px;
+    height:20px;
+    background-color:red;
+    border-radius:10px;
 }
 

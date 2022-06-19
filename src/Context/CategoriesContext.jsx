@@ -18,9 +18,11 @@ export const CategoriesProvider=({children})=>{
 const MensCato=()=>{
    setCato({women:false,men:true})
 }
-    
+const Changes=()=>{
+  setCato({women:false,men:false})
+}
     return (
-    <CategoriesContext.Provider value={{cato,MensCato,WomensCato}} >
+    <CategoriesContext.Provider value={{cato,MensCato,Changes,WomensCato}} >
         {children}
     </CategoriesContext.Provider>
     );

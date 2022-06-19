@@ -1,8 +1,10 @@
 .MenCato{
     width: 100%;
-    height: fit-content;
-    position:fixed;
-    overflow: hidden;
+    height: 50px;
+    margin-top:100px;
+    border-bottom:1px solid gainsboro;
+   padding: 10px 0;
+ 
 }
 .Mens_Cato1{
     display: flex;
@@ -40,9 +42,26 @@
     padding:5px 0 0 0 ;
     font-weight: 600;
 }
-.womens_Cato1>div:hover{
+.catego{
+   font-weight: 600;
+}
+.catego:hover{
     color: rgb(251,183,98);
     border-bottom: 1px solid rgb(251,183,98);
+}
+.dropdown{
+    padding: 0 150px;
+    width:1520px;
+    height: fit-content;
+    margin-top: 15px;
+    margin-left: -70px;
+    display: flex;
+}
+.list>li{
+    list-style: none;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: left;
 }
 
 

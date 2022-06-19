@@ -1,25 +1,42 @@
-import { Button, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react';
+import {Menu, MenuButton, MenuItem, MenuList,Heading } from '@chakra-ui/react';
 import React from 'react'
 import styles from "./Categories.module.css";
-
+import {Link,useNavigate} from "react-router-dom";
+// import { CategoriesContext } from '../../../Context/CategoriesContext';
 
 const WomenCato = () => {
-   
+  const navigate=useNavigate();
+  //  const {Changes} = useContext(CategoriesContext);
+   const handleItem=()=>{
+     navigate('/products')
+   }
     
   return (
     <div  className={styles.MenCato} >
           <div className={styles.womens_Cato1}>
-            <div className={styles.btn} >
-              <Menu>
-  <MenuButton width='130px' bg='none'  as={Button} >
-    Ethnic & Fusion
-  </MenuButton>
-  <MenuList width='1000px' >
-    <MenuItem>Download</MenuItem>
-    <MenuItem>Create a Copy</MenuItem>
-    <MenuItem>Mark as Draft</MenuItem>
-    <MenuItem>Delete</MenuItem>
-    <MenuItem>Attend a Workshop</MenuItem>
+            <div>
+            <Menu isLazy>
+  <MenuButton className={styles.catego} >Ethnic & Fusion</MenuButton>
+  <MenuList  className={styles.dropdown} >
+    {/* MenuItems are not rendered unless Menu is open */}
+    <div style={{display:'flex',flexDirection:"column"}} >
+     <Heading size='md' >Shop in Ethnic & Fusion Wear</Heading>
+  
+     <ul className={styles.list} >
+      <li><MenuItem onClick={handleItem} ><Link to="/products" >Kurtas & Kurtis</Link></MenuItem></li>
+      <li>Ethnic Sets</li>
+      <li>Ethnic Sets</li>
+      <li>Ethnic Dresses</li>
+      <li>Tops & Tunics</li>
+      <li>Leggings & Churidars</li>
+      <li>Pants & Palazzos</li>
+     </ul>
+    
+    </div>
+    <div>
+    <MenuItem></MenuItem>
+    </div>
+    <div><MenuItem></MenuItem></div>
   </MenuList>
 </Menu>
             
